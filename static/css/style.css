@@ -1,0 +1,8 @@
+.container ul{
+    display: flex;
+    list-style: none;
+}
+.container a{
+    display: block;
+    padding: 15px;
+}
