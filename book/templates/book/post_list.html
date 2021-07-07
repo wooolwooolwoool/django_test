@@ -1,0 +1,14 @@
+{% extends 'book/base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+<h2>本棚一覧</h2><hr>
+{% for post in object_list %}
+<a href="/detail/{{ post.pk }}/">
+  <h3>{{ post.title }}</h3>
+  <div>
+    カテゴリ:{{ post.get_cat_display }}
+  </div>
+</a><hr>
+{% endfor %}
+{% endblock %}
